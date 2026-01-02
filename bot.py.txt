@@ -3,7 +3,7 @@ from aiogram import Bot, Dispatcher, F
 from aiogram.types import Message, CallbackQuery
 from aiogram.fsm.context import FSMContext
 
-from config import 8350573268:AAG3jFDklUBVHdz9gl2R5CeKRTJ68yl_JRI
+from config import (8350573268:AAG3jFDklUBVHdz9gl2R5CeKRTJ68yl_JRI)
 from database import engine, Session
 from models import Base, User
 from states import RegisterState
@@ -77,4 +77,5 @@ async def main():
     await dp.start_polling(bot)
 
 if name == "main":
+
     asyncio.run(main())
